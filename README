@@ -1,0 +1,111 @@
+gimp2-ruby
+------------------------------------------
+Ruby scripting engine and plug-ins for GIMP 2.4.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  gimp2-2.4.3-1
+  glib2-2.14.4-1
+  gtk2-x11-2.12.2-1
+  libintl8-0.15-1
+  ruby-1.8.6-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  bison-2.3-1
+  cygport-0.3.5-1
+  flex-2.5.33-2
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.gimp.org/
+
+Canonical download:
+  GNOME SVN
+
+-------------------------------------------
+
+Build instructions:
+  unpack gimp2-ruby-0.1.3.73-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gimp2-ruby-0.1.3.73-X.cygport all
+
+This will create:
+  /usr/src/gimp2-ruby-0.1.3.73-X-src.tar.bz2
+  /usr/src/gimp2-ruby-0.1.3.73-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/gimp/2.0/environ/ruby.env
+  /usr/lib/gimp/2.0/interpreters/ruby.interp
+  /usr/lib/gimp/2.0/plug-ins/gloom.rb
+  /usr/lib/gimp/2.0/plug-ins/irbconsole.rb
+  /usr/lib/gimp/2.0/plug-ins/rubyfu_menu.rb
+  /usr/lib/gimp/2.0/plug-ins/runfile.rb
+  /usr/lib/gimp/2.0/plug-ins/speed.rb
+  /usr/lib/gimp/2.0/plug-ins/sphere.rb
+  /usr/lib/gimp/2.0/plug-ins/sunset.rb
+  /usr/lib/gimp/2.0/plug-ins/test.rb
+  /usr/lib/gimp/2.0/ruby/gimp.rb
+  /usr/lib/gimp/2.0/ruby/gimp_oo.rb
+  /usr/lib/gimp/2.0/ruby/gimp_oo_brush.rb
+  /usr/lib/gimp/2.0/ruby/gimp_oo_channel.rb
+  /usr/lib/gimp/2.0/ruby/gimp_oo_context.rb
+  /usr/lib/gimp/2.0/ruby/gimp_oo_display.rb
+  /usr/lib/gimp/2.0/ruby/gimp_oo_drawable.rb
+  /usr/lib/gimp/2.0/ruby/gimp_oo_edit.rb
+  /usr/lib/gimp/2.0/ruby/gimp_oo_gradient.rb
+  /usr/lib/gimp/2.0/ruby/gimp_oo_image.rb
+  /usr/lib/gimp/2.0/ruby/gimp_oo_layer.rb
+  /usr/lib/gimp/2.0/ruby/gimp_oo_palette.rb
+  /usr/lib/gimp/2.0/ruby/gimp_oo_progress.rb
+  /usr/lib/gimp/2.0/ruby/gimp_oo_selection.rb
+  /usr/lib/gimp/2.0/ruby/gimp_oo_vectors.rb
+  /usr/lib/gimp/2.0/ruby/gimpext.la
+  /usr/lib/gimp/2.0/ruby/gimpext.so
+  /usr/lib/gimp/2.0/ruby/pdb.rb
+  /usr/lib/gimp/2.0/ruby/ruby-fu-console.exe
+  /usr/lib/gimp/2.0/ruby/rubyfu.rb
+  /usr/share/doc/gimp2-ruby-0.1.3.73/ChangeLog
+  /usr/share/doc/gimp2-ruby-0.1.3.73/INSTALL
+  /usr/share/doc/gimp2-ruby-0.1.3.73/MAINTAINERS
+  /usr/share/doc/gimp2-ruby-0.1.3.73/NOTES.txt
+  /usr/share/doc/gimp2-ruby-0.1.3.73/README
+  /usr/share/doc/gimp2-ruby-0.1.3.73/TODO.txt
+  /usr/share/locale/ar/LC_MESSAGES/gimp-ruby.mo
+  /usr/share/locale/ca/LC_MESSAGES/gimp-ruby.mo
+  /usr/share/locale/de/LC_MESSAGES/gimp-ruby.mo
+  /usr/share/locale/dz/LC_MESSAGES/gimp-ruby.mo
+  /usr/share/locale/en_CA/LC_MESSAGES/gimp-ruby.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/gimp-ruby.mo
+  /usr/share/locale/fi/LC_MESSAGES/gimp-ruby.mo
+  /usr/share/locale/fr/LC_MESSAGES/gimp-ruby.mo
+  /usr/share/locale/gl/LC_MESSAGES/gimp-ruby.mo
+  /usr/share/locale/oc/LC_MESSAGES/gimp-ruby.mo
+  /usr/share/locale/pt/LC_MESSAGES/gimp-ruby.mo
+  /usr/share/locale/sl/LC_MESSAGES/gimp-ruby.mo
+  /usr/share/locale/sv/LC_MESSAGES/gimp-ruby.mo
+
+------------------
+
+Port Notes:
+
+----- version 0.1.3.73-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
