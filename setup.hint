@@ -1,4 +1,4 @@
 category: Graphics Gnome Ruby
-requires: cygwin glib2 gtk2-x11 gimp2 libintl8 ruby
+requires: gimp2 libgcc1 libglib2.0_0 libgtk2.0_0 libintl8 ruby
 sdesc: "GIMP Ruby scripting and plug-ins"
 ldesc: "Ruby scripting engine and plug-ins for GIMP 2.4."

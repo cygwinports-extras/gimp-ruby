@@ -1,20 +1,11 @@
 --- origsrc/gimp-ruby/Makefile.am	2007-12-18 00:28:05.000000000 -0600
 +++ src/gimp-ruby/Makefile.am	2007-12-18 00:47:58.796875000 -0600
-@@ -6,13 +6,6 @@
-     plug-ins \
-     po
+@@ -23,11 +23,11 @@ rubyinterpdir = $(GIMP_LIBDIR)/interpret
+ rubyenvfile = $(rubyenvdir)/ruby.env
+ rubyinterpfile = $(rubyinterpdir)/ruby.interp
  
--if PLATFORM_WIN32
--no_undefined = -no-undefined
--path_separator = ;
--else
--path_separator = :
--endif
--
- rubybase = ruby
- 
- rubydir = $(GIMP_LIBDIR)/$(rubybase)
-@@ -27,7 +20,7 @@
+-rubyconsolefile = ruby-fu-console
++rubyconsolefile = ruby-fu-console$(EXEEXT)
  
  install-env-files:
  	$(mkinstalldirs) '$(DESTDIR)$(rubyenvdir)'

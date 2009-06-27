@@ -1,9 +1,10 @@
 ORIG_PN="gimp-ruby"
-SVN_REV=${PVP[3]}
 
-inherit ruby gnome2 svn
+inherit ruby gnome2 git
 
 DESCRIPTION="GIMP Ruby scripting engine and plugins"
 HOMEPAGE="http://www.gimp.org/"
+
+PATCH_URI="0.1.3-cygwin.patch"
 
 MAKEOPTS+=" RUBY_LIBS=-lruby"
